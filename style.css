@@ -1,101 +1,232 @@
-/* Apply styles to the entire page */
-body {
-    background-color: #00bcd4; /* Cyan background color */
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+.buttonRegister {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 118px;
+  border: 0;
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(66,190,165);
+  margin-top: 30px;
+  color: antiquewhite;
+  border-radius: 10rem;
+  transition: all 0.02s;
+  font-weight: bold;
+  z-index: 0;
+  box-shadow: 0 0px 7px -5px rgba(0, 0, 0, 0.5);
+}
+.buttonLogin {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 128px;
+  border: 0;
+  position: relative;
+  overflow: hidden;
+  background-color: whitesmoke;
+  margin-top: 8px;
+  border-radius: 10rem;
+  transition: all 0.02s;
+  font-weight: bold;
+  color: rgb(66,190,165);
+  z-index: 0;
+  box-shadow: 0 0px 7px -5px rgba(0, 0, 0, 0.5);
 }
 
-.navbar {
-    --nav-bg : #F9F3CC;
-}
-
-.navbar {
-    background-color: var(--nav-bg) !important;
-}
-
-/* Styles for the quiz container */
-.quiz-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #D2E0FB;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
-}
-
-.quiz-container h1 {
-    font-size: 24px;
-    color: #333;
-}
-
-/* Styles for questions and radio options */
-.question {
-    margin-bottom: 20px;
-    text-align: left;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #F9F3CC;
-}
-
-.question label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.radio-options input[type="radio"],
-.radio-options label {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 10px;
-    color: #333;
-}
-
-/* Styles for the submit button */
-button[type="submit"] {
-    display: block;
-    margin: 20px auto;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-/* Styles for the result container */
-.result-container {
-    display: none;
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    font-family: Arial, sans-serif;
-    text-align: center;
-}
-
-/* Styles for the result text */
-.result-text {
-    font-size: 18px;
-    color: #333;
-    font-weight: bold;
-}
-
-/* Styles for result messages or additional content */
-.result-message {
-    font-size: 16px;
-    color: #777;
-    margin-top: 10px;
-}
-/* Add linear gradient background */
-body {
-    background: linear-gradient(to bottom, #00bcd4, #007bff);
-    /* Rest of your CSS remains the same */
-}
+/*--------->>> login page css<<<-------------*/
+.card {
+  width: 400px;
+  padding: 1.9rem 1.2rem;
+  text-align: center;
+  background: #2a2b38;
+  border-radius: 20px;
+ }
+ 
+ /*Inputs*/
+ .field {
+  margin-top: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5em;
+  background-color: #1f2029;
+  border-radius: px;
+  padding: .5em 1em;
+ }
+ 
+ .input-icon {
+  height: 1em;
+  width: 1em;
+  fill: #ffeba7;
+ }
+ 
+ .input-field {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #d3d3d3;
+ }
+ 
+ /*Text*/
+ .title {
+  margin-bottom: 1rem;
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #f5f5f5;
+ }
+ 
+ /*Buttons*/
+ .btn {
+  margin: 1rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: .8em;
+  text-transform: uppercase;
+  padding: 0.6em 1.2em;
+  background-color: #ffeba7;
+  color: #5e6681;
+  box-shadow: 0 8px 24px 0 rgb(255 235 235 / 20%);
+  transition: all .3s ease-in-out;
+ }
+ 
+ .btn-link {
+  color: #f5f5f5;
+  display: block;
+  font-size: .75em;
+  transition: color .3s ease-out;
+ }
+ 
+ /*Hover & focus*/
+ .field input:focus::placeholder {
+  opacity: 0;
+  transition: opacity .3s;
+ }
+ 
+ .btn:hover {
+  background-color: #5e6681;
+  color: #ffeba7;
+  box-shadow: 0 8px 24px 0 rgb(16 39 112 / 20%);
+ }
+ 
+ .btn-link:hover {
+  color: #ffeba7;
+ }
+ 
 
 
+ /*---------->>register page css<<----------*/
+ .form {
+  background-color: #15172b;
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: 700px;
+  padding: 20px;
+  width: 320px;
+}
+
+.title {
+  color: #eee;
+  font-family: sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.subtitle {
+  color: #eee;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.input-container {
+  height: 50px;
+  position: relative;
+  width: 100%;
+}
+
+.ic1 {
+  margin-top: 40px;
+}
+
+.ic2 {
+  margin-top: 30px;
+}
+
+.input {
+  background-color: #303245;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  font-size: 18px;
+  height: 100%;
+  outline: 0;
+  padding: 4px 20px 0;
+  width: 100%;
+}
+
+.cut {
+  background-color: #15172b;
+  border-radius: 10px;
+  height: 20px;
+  left: 20px;
+  position: absolute;
+  top: -20px;
+  transform: translateY(0);
+  transition: transform 200ms;
+  width: 76px;
+}
+
+.cut-short {
+  width: 50px;
+}
+
+.iLabel {
+  color: #65657b;
+  font-family: sans-serif;
+  left: 20px;
+  line-height: 14px;
+  pointer-events: none;
+  position: absolute;
+  transform-origin: 0 50%;
+  transition: transform 200ms, color 200ms;
+  top: 20px;
+}
+
+.input:focus ~ .cut {
+  transform: translateY(8px);
+}
+
+.input:focus ~ .iLabel {
+  transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+
+.input:not(:focus) ~ .iLabel {
+  color: #808097;
+}
+
+.input:focus ~ .iLabel {
+  color: #dc2f55;
+}
+
+.submit {
+  background-color: #08d;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  cursor: pointer;
+  font-size: 18px;
+  height: 50px;
+  margin-top: 38px;
+  text-align: center;
+  width: 100%;
+}
+
+.submit:active {
+  background-color: #06b;
+}
