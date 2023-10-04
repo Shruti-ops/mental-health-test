@@ -1,0 +1,101 @@
+/* Apply styles to the entire page */
+body {
+    background-color: #00bcd4; /* Cyan background color */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    --nav-bg : #F9F3CC;
+}
+
+.navbar {
+    background-color: var(--nav-bg) !important;
+}
+
+/* Styles for the quiz container */
+.quiz-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #D2E0FB;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.quiz-container h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Styles for questions and radio options */
+.question {
+    margin-bottom: 20px;
+    text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #F9F3CC;
+}
+
+.question label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.radio-options input[type="radio"],
+.radio-options label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    color: #333;
+}
+
+/* Styles for the submit button */
+button[type="submit"] {
+    display: block;
+    margin: 20px auto;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Styles for the result container */
+.result-container {
+    display: none;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Styles for the result text */
+.result-text {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Styles for result messages or additional content */
+.result-message {
+    font-size: 16px;
+    color: #777;
+    margin-top: 10px;
+}
+/* Add linear gradient background */
+body {
+    background: linear-gradient(to bottom, #00bcd4, #007bff);
+    /* Rest of your CSS remains the same */
+}
+
+
